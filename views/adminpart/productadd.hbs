@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sample CRUD Firebase Javascript - 01 Read Data</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB0M8Qrwze4wrkRKz6NBZQ5N4ZeVMzsCCU",
+    authDomain: "groceryapp-dbf52.firebaseapp.com",
+    databaseURL: "https://groceryapp-dbf52.firebaseio.com",
+    projectId: "groceryapp-dbf52",
+    storageBucket: "groceryapp-dbf52.appspot.com",
+    messagingSenderId: "1019129350835",
+    appId: "1:1019129350835:web:3e906efe26a991f1747ec6",
+    measurementId: "G-0W3P8WERJT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <body>
+        <form method="post" action="/insertproduct">
+  <label for="fname">Product name</label>
+  <input type="text" id="pname" name="pname"><br><br>
+  <label for="lname">product description</label>
+  <input type="text" id="pdes" name="pdes"><br><br>
+  <label for="lname">product price</label>
+  <input type="text" id="price" name="price"><br><br>
+  <label for="lname">product image url</label>
+  <input type="text" id="purl" name="purl"><br><br>
+  <input type="submit" value="Submit">
+</form>
+    </body>
+
+</html>
