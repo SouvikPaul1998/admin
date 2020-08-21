@@ -1,7 +1,7 @@
 var express = require('express');
 var adminController = require('../controllers/admincontroller');
 var router = express.Router();
-var firebase = require('firebase');
+var firebase = require('firebase');//this one
 var fire = firebase.initializeApp({
     apiKey: "AIzaSyB0M8Qrwze4wrkRKz6NBZQ5N4ZeVMzsCCU",
     authDomain: "groceryapp-dbf52.firebaseapp.com",
